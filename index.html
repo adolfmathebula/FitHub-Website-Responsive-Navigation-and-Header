@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitHub</title>
+    <!-- Style For DeskTop View -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Style For Mobile View -->
+    <link rel="stylesheet" href="styles.mobile.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Poppins Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="top-bar">
+        <span>Keep your family safe from covid-19</span>
+        <div class="top-bar-x-mark" onclick="removeTopBar()">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">FitHub</div>
+        <!-- Menu Items For Desktop View -->
+        <ul class="menu-items">
+            <li>Workouts</li>
+            <li>Healthy Living</li>
+            <li>Community</li>
+            <li>Blog</li>
+            <div class="secondary-menu">
+                <i class="fa-solid fa-user" class="sign-in"></i>
+                <i class="fas fa-search" class="search"></i>
+                <i class="fa-solid fa-cart-shopping" class="cart"></i>
+            </div>
+        </ul>
+
+        <!-- Mobile Bars Icon -->
+        <div onclick="toogleMobileMenu()" class="mobile-icon-display">
+            <div id="bars">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="xmark">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+
+        <!-- Menu Items For Mobile View -->
+        <ul class="menu-items-mobile">
+            <li>Workouts</li>
+            <li>Healthy Living</li>
+            <li>Community</li>
+            <li>Blog</li>
+            <div class="secondary-menu-mobile">
+                <i class="fa-solid fa-user" class="sign-in"></i>
+                <i class="fas fa-search" class="search"></i>
+                <i class="fa-solid fa-cart-shopping" class="cart"></i>
+
+            </div>
+        </ul>
+    </nav>
+
+    <div class="header-container">
+        <header>
+            <div class="header-into">
+                <h1>Moving From Beginner To Expert. <span>For Free</span></h1>
+                <p>Choose from hundreds of workouts, healthy recipes, and expert articles, for a
+                    whole body and mind approach to feeling great.</p>
+            </div>
+            <div class="header-image">
+                <img src="/images/header-image2.png" alt="header image" />
+            </div>
+
+        </header>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

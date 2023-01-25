@@ -1,0 +1,166 @@
+/*
+    Desktop View CSS
+    * Mobile StyleS Imported At the End
+    * Uses Flexbox Styling For Layout
+*/
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* TOP BAR */
+
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(200, 234, 245);
+    font-size:small;
+    text-align: center; 
+    min-height: 1.8rem;
+    gap: 30px;
+}
+
+.top-bar span{
+    color: #000;
+}
+
+.top-bar-x-mark:hover{
+    color: red;
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+
+nav{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+    align-items: center;
+    min-height: 5rem;
+    /* background-color: rgb(248, 247, 246); */
+    padding: 0 5rem;
+    gap: 5rem;
+}
+
+.logo{
+    color: skyblue;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.logo:hover{
+    color: rgb(42, 131, 167);
+}
+
+/* DESKTOP NAVIGATION*/
+
+.menu-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.menu-items li{
+ list-style: none;
+}
+
+.menu-items li:hover{
+    cursor: pointer;
+    color: darkblue;
+    border-bottom: 1px solid darkblue;
+}
+
+.secondary-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+/* .sign-in{
+}
+.search{
+}
+.cart{
+} */
+
+.secondary-menu i{
+    color: skyblue;
+}
+
+.secondary-menu i:hover{
+    cursor: pointer;
+    color: rgb(42, 131, 167);
+}
+
+/* MOBILE NAVIGATION */
+
+.mobile-icon-display{
+    display: none;
+}
+
+.menu-items-mobile{
+    display: none !important;
+}
+
+#mobile-menu-display{
+    display: none !important
+}
+
+/* HEADER */
+header{
+    max-height: 500px;
+    background: linear-gradient(to right, blue, skyblue);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.header-into{
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-into h1{
+    color: #fff;
+    width: 90%;
+    font-size: 60px;
+}
+
+.header-into h1 span{
+    color: orange;
+    display: block;
+}
+
+.header-into p{
+    color: #fff;
+    width: 90%;
+}
+
+.header-image{
+    width: 95%;
+    flex-basis: 40%;
+    overflow: hidden;
+}
+
+.header-image img{
+    max-width: fit-content;
+}
